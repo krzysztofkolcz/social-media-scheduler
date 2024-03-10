@@ -1,0 +1,8 @@
+version: '2.4'
+
+services:
+  app-local:
+    build: ./app
+    container_name: app
+    mem_limit: 350m
+    ports: ["8010:8010"]

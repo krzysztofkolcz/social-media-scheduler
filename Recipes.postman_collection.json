@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "dcfaa87b-a21d-4e04-89e5-603d2e6cafbb",
+		"name": "Tutorial Recipes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12807179"
+	},
+	"item": [
+		{
+			"name": "Create recipe",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "YK6M2iUQtOwrXEBM5NAfokQ-sqRzsprxYGSQHg5mdofGlFtaqq7SESpxv7hn",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ham and cheese\",\n    \"ingredients\":[\n        {\n            \"name\":\"breed\"\n        },{\n            \"name\":\"ham\"\n        },{\n            \"name\":\"cheese\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{recipes}}/recipes",
+					"protocol": "http",
+					"host": [
+						"{{recipes}}"
+					],
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create recipe gorilla mux",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "YK6M2iUQtOwrXEBM5NAfokQ-sqRzsprxYGSQHg5mdofGlFtaqq7SESpxv7hn",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ham and cheese\",\n    \"ingredients\":[\n        {\n            \"name\":\"breed\"\n        },{\n            \"name\":\"ham\"\n        },{\n            \"name\":\"cheese\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{recipes-gorilla}}/recipes",
+					"protocol": "http",
+					"host": [
+						"{{recipes-gorilla}}"
+					],
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get recipes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "YK6M2iUQtOwrXEBM5NAfokQ-sqRzsprxYGSQHg5mdofGlFtaqq7SESpxv7hn",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ham and cheese\",\n    \"ingridients\":[\n        {\n            \"name\":\"breed\"\n        },{\n            \"name\":\"ham\"\n        },{\n            \"name\":\"cheese\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{recipes}}/recipes",
+					"protocol": "http",
+					"host": [
+						"{{recipes}}"
+					],
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get recipes gorilla mux",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "YK6M2iUQtOwrXEBM5NAfokQ-sqRzsprxYGSQHg5mdofGlFtaqq7SESpxv7hn",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ham and cheese\",\n    \"ingridients\":[\n        {\n            \"name\":\"breed\"\n        },{\n            \"name\":\"ham\"\n        },{\n            \"name\":\"cheese\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{recipes-gorilla}}/recipes",
+					"protocol": "http",
+					"host": [
+						"{{recipes-gorilla}}"
+					],
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get recipe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "YK6M2iUQtOwrXEBM5NAfokQ-sqRzsprxYGSQHg5mdofGlFtaqq7SESpxv7hn",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ham and cheese\",\n    \"ingridients\":[\n        {\n            \"name\":\"breed\"\n        },{\n            \"name\":\"ham\"\n        },{\n            \"name\":\"cheese\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{recipes}}/recipes/ham-and-cheese-2",
+					"protocol": "http",
+					"host": [
+						"{{recipes}}"
+					],
+					"path": [
+						"recipes",
+						"ham-and-cheese-2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get recipe gorilla mux",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "YK6M2iUQtOwrXEBM5NAfokQ-sqRzsprxYGSQHg5mdofGlFtaqq7SESpxv7hn",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ham and cheese\",\n    \"ingridients\":[\n        {\n            \"name\":\"breed\"\n        },{\n            \"name\":\"ham\"\n        },{\n            \"name\":\"cheese\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{recipes-gorilla}}/recipes/ham-and-cheese",
+					"protocol": "http",
+					"host": [
+						"{{recipes-gorilla}}"
+					],
+					"path": [
+						"recipes",
+						"ham-and-cheese"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
