@@ -1,8 +1,8 @@
-version: '2.4'
+version: '1.0'
 
 services:
-  app-local:
-    build: ./app
-    container_name: app
-    mem_limit: 350m
+  social-media-scheduler:
+    build:
+      dockerfile: Dockerfile
+    mem_limit: 1000m
     ports: ["8010:8010"]
