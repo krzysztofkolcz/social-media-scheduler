@@ -57,6 +57,9 @@ func Init() *CognitoClient {
 
 func main() {
 
+	arr := []any{"a", "b", "c"}
+	test(arr)
+
 	// Create the Store and Recipe Handler
 	store := recipes.NewMemStore()
 	recipesHandler := NewRecipesHandler(store)
@@ -276,4 +279,7 @@ func accessControlMiddleware(next http.Handler) http.Handler {
 
 		next.ServeHTTP(w, r)
 	})
+}
+
+func test(...any) {
 }
